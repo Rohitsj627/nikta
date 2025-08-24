@@ -3,171 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AudioPhile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <style type="text/css">
-        html{
-            scroll-behavior: smooth;
-        }
-
-        
-    </style>
-
+    <title>AudioPhile - Premium Audio Equipment</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=100&h=50&fit=crop" alt="AudioPhile Logo">
+                <span class="logo-text">AudioPhile</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="user-btn" id="user-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <div class="logo">
-        <img src="logo.png">
-    </div>
-
-
-    <div style="background-color: transparent;" class="navigation">
-        <div style="background: transparent;" class="navigatorr">
-            <a href="#"><button class="bta">Home</button></a>
-            <a href="#"><button class="btc">Account</button></a>
-            <a href="#"><button class="btd">More Info</button></a>
-            <a href="rough.html"><button class="bte">Login</button></a>
+    <!-- Search Modal -->
+    <div class="search-modal" id="search-modal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search for products..." class="search-input" id="search-input">
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="search-results"></div>
         </div>
     </div>
-    
 
-
-    <div class="visit">
-        <a href="#nav">
-            <button class="store">
-            Visit Store! -->
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" id="cart-close">
+                <i class="fas fa-times"></i>
             </button>
-        </a>
-    </div>
-
-
-    <div class="navigationbga" id="nav">
-        <div style="background-color: transparent;" class="logoaa">
-            <img src="logoa.png">
         </div>
-        <div class="logoname">
-            <h1 style="background-color: transparent;">TheAudioPhileStore</h1>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
         </div>
-    </div>
-9
-    <div style="background-color: transparent;" class="navigator" >
-        <a href="#"><button class="btna">Store</button></a>
-        <a href="#cataa"><button class="btnc">Catagories</button></a>
-        <a href="#"><button class="btnd">More Info</button></a>
-        <a href="#"><button class="btne">Go Up</button></a>
-    </div>
-
-
-
-    <div class="storetxt">
-    </div>
-
-    <div style="background-color: transparent;" class="stor">
-        <h1 style="background-color: transparent;">Store.</h1>
-    </div>
-    <div style="background-color: transparent;" class="sto">
-        <h1 style="background-color: transparent;">The best way to buy the </h1>
-    </div>
-    <div style="background-color: transparent;" class="stoa">
-        <h1 style="background-color: transparent;">products you </h1>
-    </div>
-    <div style="background-color: transparent;" class="stob">
-        <h1 style="background-color: transparent;">love.</h1>
-    </div>
-
-
-
-    <div style="background-color: transparent;" class="products" >
-
-        <div style="background-color: transparent;" class="banner">
-            <img src="banner1.png">
-            <img src="banner2.png">
-            <img src="banner3.png">
-            <img src="banner5.png">
-        </div>
-
-    </div>
-
-    <div style="background-color: transparent;" class="catagg" id="cataa">
-        <h1 style="background-color: transparent;">lele</h1>
-    </div>
-
-    <div class="catagory">
-        <div style="background-color: transparent;" class="cata">
-            <h1 style="background-color: transparent;">shop by</h1>
-        </div>
-
-        <div style="background-color: transparent;" class="catag">
-            <h1 style="background-color: transparent;">Catagories.</h1>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total">0.00</span></span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
         </div>
     </div>
 
-    <div class="prods">
-
-        <div class="proda">
-            <a href="#headphne"><img src="productdemo.png"></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Experience Audio
+                    <span class="gradient-text">Perfection</span>
+                </h1>
+                <p class="hero-description">
+                    Discover premium headphones, earbuds, and audio equipment from the world's leading brands. 
+                    Immerse yourself in crystal-clear sound quality.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('products')">
+                        Shop Now
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Premium Headphones">
+            </div>
         </div>
-
-        <div class="prodb">
-            <a href=""><img src="productdemoa.png"></a>
+        
+        <!-- Floating Stats -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Products</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Satisfaction</span>
+            </div>
         </div>
+    </section>
 
-        <div class="prodc">
-            <a href=""><img src="productdemob.png"></a>
+    <!-- Featured Brands -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title">Trusted by Leading Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=150&h=80&fit=crop" alt="Apple">
+                </div>
+                <div class="brand-item">
+                    <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=150&h=80&fit=crop" alt="Sony">
+                </div>
+                <div class="brand-item">
+                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=150&h=80&fit=crop" alt="Sennheiser">
+                </div>
+                <div class="brand-item">
+                    <img src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&w=150&h=80&fit=crop" alt="Bose">
+                </div>
+                <div class="brand-item">
+                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=150&h=80&fit=crop" alt="Audio-Technica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Categories</h2>
+                <p class="section-subtitle">Find the perfect audio equipment for your needs</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="headphones">
+                    <div class="category-image">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Headphones">
+                    </div>
+                    <div class="category-content">
+                        <h3>Headphones</h3>
+                        <p>Premium over-ear and on-ear headphones</p>
+                        <span class="product-count">120+ Products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="earbuds">
+                    <div class="category-image">
+                        <img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Earbuds">
+                    </div>
+                    <div class="category-content">
+                        <h3>Earbuds</h3>
+                        <p>Wireless and wired earbuds for every lifestyle</p>
+                        <span class="product-count">80+ Products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="speakers">
+                    <div class="category-image">
+                        <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Speakers">
+                    </div>
+                    <div class="category-content">
+                        <h3>Speakers</h3>
+                        <p>Portable and home audio speakers</p>
+                        <span class="product-count">60+ Products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="accessories">
+                    <div class="category-image">
+                        <img src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Accessories">
+                    </div>
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Cables, stands, and audio accessories</p>
+                        <span class="product-count">40+ Products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="headphones">Headphones</button>
+                    <button class="filter-btn" data-filter="earbuds">Earbuds</button>
+                    <button class="filter-btn" data-filter="speakers">Speakers</button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="load-more-btn">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Why Choose AudioPhile?</h2>
+                    <p class="about-description">
+                        We're passionate about delivering exceptional audio experiences. With over a decade of expertise 
+                        in premium audio equipment, we curate only the finest products from renowned brands worldwide.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Free Shipping</h4>
+                                <p>Free delivery on orders over $100</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>2 Year Warranty</h4>
+                                <p>Comprehensive warranty on all products</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>Expert customer support anytime</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-undo"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>30-Day Returns</h4>
+                                <p>Hassle-free returns and exchanges</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=600&h=500&fit=crop" alt="About AudioPhile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest news about new products and exclusive offers</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Have questions? We'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Audio Street, Sound City, SC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@audiophile.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=100&h=50&fit=crop" alt="AudioPhile">
+                        <span>AudioPhile</span>
+                    </div>
+                    <p>Your trusted partner for premium audio equipment and exceptional sound experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AudioPhile. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
         </div>
     </div>
 
-    <div class="names">
-        <div class="headphn">
-           <h1>Headphones!</h1>
-        </div>
-        <div class="earbd">
-            <h1>Earbuds!</h1>
-        </div>
-        <div class="earphn">
-            <h1>Earphones!</h1>
-        </div>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loading-spinner">
+        <div class="spinner"></div>
     </div>
 
-   <div class="orr">
-    <div class="appllogo">
-        <img src="applelogo.png">
-    </div>
-    <div class="sonylogo">
-        <img src="sonylogoa.png">
-    </div>
-    <div class="senlogo">
-        <img src="senheizerlogo.png">
-    </div>
-   </div>
-
-
-   <div class="headphone">
-</div>
-
-<div class="hdphn" id="headphne">
-    <img src="headphonebanner.png">
-</div>
-
-<div class="productss">
-
-</div>
-
-<div class="proa">
-    <a href=""><img src="pro1.png"></a>
-</div>
-
-<div class="proba">
-    <a href=""><img src="pro2.png"></a>
-</div>
-
-<div class="proca">
-    <a href=""><img src="pro3.png"></a>
-</div>
-
-    
-    
+    <script src="src/js/main.js"></script>
 </body>
 </html>
