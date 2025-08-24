@@ -1,0 +1,158 @@
+*{
+    background-color:#dedede;
+}
+
+.navigationbga{
+
+    width: 1400px;
+    height: 70px;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.863);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    box-shadow: 5px 5px 20px rgba(134, 132, 132, 0.147);
+    z-index: 1;
+}
+
+.logoaa img{
+    width: 100px;
+    height: 50px;
+    margin-left: 150px;
+    border-radius: 20px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff00;
+}
+
+.logoname{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+}
+
+.navigator {
+    margin-left: 620px;
+    margin-top: -55px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 25px;
+    z-index: 1;
+    animation: navigator both;
+
+}
+
+.navigator a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.navigator .btna{
+    width: 100px;
+    height: 40px;
+    background: rgba(240, 240, 236, 0.001);
+    border: 2px solid rgba(19, 19, 19, 0);
+    border-radius: 10px;
+    color: rgba(20, 20, 20, 0.95);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .1s;
+    backdrop-filter: blur(20px);
+}
+
+
+.navigator .btnc{
+    width: 160px;
+    height: 40px;
+    background: rgba(240, 240, 236, 0);
+    border: 2px solid rgba(17, 17, 17, 0);
+    border-radius: 10px;
+    color: rgb(33, 33, 33);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .1s;
+    backdrop-filter: blur(20px);
+
+}.navigator .btnd{
+    width: 150px;
+    height: 40px;
+    background: rgba(240, 240, 236, 0);
+    border: 2px solid rgba(20, 20, 20, 0);
+    border-radius: 10px;
+    color: rgb(29, 29, 29);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .1s;
+    backdrop-filter: blur(20px);
+
+}.navigator .btne{
+    width: 100px;
+    height: 40px;
+    background: rgba(240, 240, 236, 0);
+    border: 2px solid rgba(40, 40, 40, 0);
+    border-radius: 10px;
+    color: rgb(33, 33, 33);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .1s;
+    backdrop-filter: blur(20px);
+}
+
+.navigator .btna:hover {
+    background: rgb(36, 36, 36);
+    color: rgb(221, 219, 219);
+    font-size: 1.2rem;
+}
+
+
+
+.navigator .btnb:hover {
+    background: rgb(33, 33, 27);
+    color: rgba(216, 216, 212, 0.95);
+    font-size: 1.2rem;
+}
+
+.navigator .btnc:hover {
+    background: rgb(20, 20, 19);
+    color: rgba(216, 216, 212, 0.95);
+    font-size: 1.2rem;
+}
+
+.navigator .btnd:hover {
+    background: rgb(23, 23, 22);
+    color: rgba(216, 216, 212, 0.95);
+    font-size: 1.2rem;
+}
+
+.navigator .btne:hover {
+    background: rgb(23, 23, 23);
+    color: rgba(216, 216, 212, 0.95);
+    font-size: 1.2rem;
+}
+
+
+.hdphn img {
+    width: 1350px;
+    height: 750px;
+    margin-left: 50px;
+}
+
+
+
